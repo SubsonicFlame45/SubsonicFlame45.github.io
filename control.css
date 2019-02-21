@@ -4,3 +4,46 @@ body {
     font-family: 'Cabin', sans-serif;
     background-color: lightblue; 
 }
+.block-container {
+    width: 300px;
+}
+.row{
+    display: flex; 
+}
+.block{
+    width: 100px; 
+    height: 100px; 
+
+}
+.red{
+    background-color: red; 
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.purple{
+    background-color: purple;
+}
+.white{
+    background-color: white;
+}
+.orange{
+    background-color: orange;
+}
+.pink{
+    background-color: pink;
+}
+.violet{
+    background-color: violet; 
+}
+.tomato{
+    background-color: tomato;
+}
+p.ex1  {
+    border: 1px solid black;
+    outline-style: solid; 
+    outline-color: red; 
+}
