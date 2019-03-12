@@ -40,3 +40,31 @@ document.getElementById('change-food-button').onclick = changeFood
 document.getElementById('change-pronoun-button').onclick = changePronoun
 
 console.log('This is working');
+
+
+
+let value = 0;
+document.getElementById('value').innerText = value;
+function add1() {
+    value = value + 1
+    document.getElementById('value').innerText = value;
+}
+document.getElementById('add').onclick = add1
+
+function subtract1() {
+    value = value - 1
+    document.getElementById('value').innerText = value;
+}
+document.getElementById('subtract').onclick = subtract1
+
+function fsubtract10() {
+    value = value - 10
+    document.getElementById('value').innerText = value;
+}
+document.getElementById('subtract10').onclick = fsubtract10
+
+function fadd10() {
+    value = value + 10
+    document.getElementById('value').innerText = value;
+}
+document.getElementById('add10').onclick = fadd10
