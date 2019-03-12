@@ -68,3 +68,14 @@ function fadd10() {
     document.getElementById('value').innerText = value;
 }
 document.getElementById('add10').onclick = fadd10
+function fsubtract100() {
+
+    value = value - 100
+    document.getElementById('value').innerText = value;
+}
+document.getElementById('subtract100').onclick = fsubtract100
+function fadd100() {
+    value = value + 100
+    document.getElementById('value').innerText = value;
+}
+document.getElementById('add100').onclick = fadd100
