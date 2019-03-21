@@ -29,5 +29,25 @@ function drawFlower(x, y) {
     ellispe8.transform({rotation: 150});
     let circle = draw.circle(60).fill('#ff9215').center(x, y)
 }
-
+function bee() {
+    drawBee(680, 40);
+}
+function drawBee(x , y) {
+    let ellipse = draw.ellipse(45 , 25).fill('#ecd100').center(x, y)
+    var line = draw.line(0, 12, 0, 0).move(x , y)
+    line.stroke({ color: '#000000', width: 2, linecap:'round'})
+    var line = draw.line(0, 11, 0, 0).move(x - 7, y)
+    line.stroke({ color: '#000000', width: 2, linecap:'round'})
+    var line = draw.line(0, 11, 0, 0).move(x + 7, y)
+    line.stroke({ color: '#000000', width: 2, linecap:'round'})
+    var line = draw.line(0, 13, 0, 0).move(x + 15, y - 4)
+    line.stroke({ color: '#000000', width: 2, linecap:'round'})
+    let ellispe2 = draw.ellipse(40, 17).fill('#4dd2cf').center(x + 5, y - 10)
+    ellispe2.transform({rotation: 350})
+    let circle = draw.circle(18).fill('#000000').center(x - 20, y)
+    var line = draw.line(0, 0, 8, 8).move(x - 35, y - 15)
+    line.stroke({ color: '#000000', width: 3, linecap:'square'})
+    let circle1 = draw.circle(5).fill('#ec0700').center(x - 22, y)
+}
 document.getElementById('start-button').onclick = flower;
+document.getElementById('bee-button').onclick = bee;
